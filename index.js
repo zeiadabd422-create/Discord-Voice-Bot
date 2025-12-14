@@ -80,7 +80,5 @@ distube
 client.once(Events.ClientReady, c => {
     console.log(`✅ البوت جاهز باسم: ${c.user.tag}`);
 });
-console.log(`Token Value Check: ${process.env.DISCORD_TOKEN}`);
-client.login(process.env.DISCORD_TOKEN);
 
 client.login(process.env.DISCORD_TOKEN);
