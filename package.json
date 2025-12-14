@@ -4,7 +4,7 @@
   "description": "Stable Discord Music Bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "echo $DISCORD_TOKEN"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
