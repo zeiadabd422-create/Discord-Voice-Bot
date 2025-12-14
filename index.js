@@ -81,4 +81,4 @@ client.once(Events.ClientReady, c => {
     console.log(`✅ البوت جاهز باسم: ${c.user.tag}`);
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login('MTQ0OTg1NDc2MjQyOTMyMTMzNw.GaCEkf.5ka6nrsQcRLVPD7GN3FWHXd4ME-lVYlIeQPAK8');
