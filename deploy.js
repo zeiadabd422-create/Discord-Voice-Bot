@@ -1,10 +1,9 @@
 const { REST, Routes } = require('discord.js');
 
-// ⚠️⚠️ عدّل هذه الأرقام 
-const CLIENT_ID = '1349960618479976610'
-const GUILD_ID = '1449712276608258088'
+// ⚠️⚠️ عدّل هذه الأرقام بالبيانات الخاصة بك ⚠️⚠️
+const CLIENT_ID = '1349960618479976610'; // ضع ID البوت هنا
+const GUILD_ID = '1449104671737380915'; // ضع ID السيرفر هنا
 
-// قائمة الأوامر الثلاثة فقط
 const commands = [
     {
         name: 'play',
@@ -20,9 +19,9 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 (async () => {
     try {
         console.log('🔄 جاري تسجيل الأوامر الجديدة...');
-
+        
         await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands });
-
+        
         console.log('✅ تم تسجيل 3 أوامر (play, stop, skip) بنجاح!');
     } catch (error) {
         console.error(error);
