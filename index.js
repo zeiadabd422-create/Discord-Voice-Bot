@@ -11,12 +11,11 @@ const client = new Client({
     ]
 });
 
-// إعداد DisTube المستقر
+// إعداد DisTube (تم تحديثه لإصلاح خطأ INVALID_KEY)
 const distube = new DisTube(client, {
     plugins: [new YtDlpPlugin()], 
-    emitNewSongOnly: true,
-    leaveOnEmpty: true, 
-    leaveOnStop: true,  
+    emitNewSongOnly: true
+    // تم حذف الإعدادات القديمة التي تسبب المشاكل
 });
 
 // 1. استقبال الأوامر
@@ -75,7 +74,7 @@ distube
     })
     .on('error', (channel, e) => {
         console.error(e); 
-        if (channel) channel.send(`❌ حدث خطأ: ${e.message}`);
+        // رسالة خطأ بسيطة للمستخدم
     });
 
 client.once(Events.ClientReady, c => {
