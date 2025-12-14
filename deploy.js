@@ -1,7 +1,7 @@
 const { REST, Routes } = require('discord.js');
 
 // ⚠️⚠️ عدّل هذه الأرقام بالبيانات الخاصة بك ⚠️⚠️
-const CLIENT_ID = '1449712132785705042'; // ضع ID البوت هنا
+const CLIENT_ID = '1449854762429321337'; // ضع ID البوت هنا
 const GUILD_ID = '1449104671737380915'; // ضع ID السيرفر هنا
 
 const commands = [
