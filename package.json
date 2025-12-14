@@ -2,7 +2,7 @@
   "name": "voice-bot",
   "version": "1.0.0",
   "description": "Stable Discord Music Bot",
-  "main": "index.js",
+  "main": "deploy.js",
   "scripts": {
     "start": "node index.js"
   },
